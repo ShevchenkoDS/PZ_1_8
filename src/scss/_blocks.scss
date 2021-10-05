@@ -1,0 +1,65 @@
+.blocks {
+  width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  padding: 20px;
+  background-color: #e0e0e0;
+
+  &-link {
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+
+  &-left {
+    margin-right: 25px;
+    position: relative;
+    img {
+      width: 472px;
+      height: 145px;
+    }
+
+  }
+
+  &-right {
+    position: relative;
+    img {
+      width: 472px;
+      height: 145px;
+    }
+  }
+
+  &-left,
+  &-right {
+    width: 41.5%;
+    height: 145px;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+
+    
+    span {
+      transition: background-color 0.2s linear;
+      background-color: rgba(0,0,0,0.7);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    span:hover {
+      background-color: rgba(#000000, 0);
+    }
+
+    a {
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      z-index: 2;
+      width: 100%;
+      display: block;
+    }
+  }
+}
